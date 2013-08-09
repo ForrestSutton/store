@@ -20,3 +20,7 @@ updated_at: "2013-08-09T00:17:20Z"
  curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '{"category_id": 1,"created_at": ,"id":null,"name":"green fez","price":"12.50"}'  http://localhost:3000/products
 
  http://pnhoang.tumblr.com/post/23738595819/use-curl-to-manage-restful-rails-resource
+
+
+ curl http://localhost:3000/api/v1/products.json -u "admin:secret" (this works with basic authentication 
+ http_basic_authenticate_with name: "admin", password: "secret")
